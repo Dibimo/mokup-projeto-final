@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+}
+.geral-container{
+    display: flex;
+
+}
+
+.menu-lateral-container{
+    background-color: #777;
+    width: 3vw;
+    height: 100vh;
+}
+
+.menu-lateral{
+    color:white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    margin-top: 10px;
+}
+
+.dashboard-container{
+    width: 90%;
+    height: 420px;
+    margin: 5% auto;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    background-color: #777;
+    border: 1px solid #555;
+    border-radius: 10px;
+    color: white;
+    margin: 1% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#projetosCard{
+    grid-column: 1/4 ;
+    grid-row: 1;
+}
+
+#dividasCard{
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+#fontesFixasCard{
+    grid-column: 1;
+    grid-row: 3;
+    margin-right: 1%;
+}
+
+#fontesNaoFixasCards{
+    grid-column: 2;
+    grid-row: 3;
+    margin-right: 1%;
+}
+
+#gastosCard{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
